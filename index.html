@@ -18,14 +18,12 @@
             <div class="d-flex flex-column">
                 <label class="font-weight-bold" for="input-city">Search for a City</label>
                 <input id="input-city" type="text" placeholder="City">
-                <button id="submitBtn" class="text-center text-white bg-dark my-2">Submit</button>
+                <button id="submitBtn" class="my-2 btn-dark rounded">Submit</button>
             </div>
             <hr class="mt-2 mb-2 bg-dark">
-            <div>
-                <ul class="list-unstyled">
-                    <li>Melbourne</li>
-                    <li>Perth</li>
-                    <li>Sydney</li>
+            <div class="col-8">
+                <ul id="search-history" class="list-group mx-auto p-0 mt-4 container-lg overflow-auto">
+
                 </ul>
             </div>
         </div>
@@ -36,6 +34,7 @@
                     <h2 id="city-name"></h2>
                     <h3 id="date"></h3>
                     <ul class="list-unstyled">
+                        <!-- Today's weather goes here -->
                         <li id="weather-icon"></li>
                         <li id="temp"></li>
                         <li id="wind"></li>
@@ -46,12 +45,9 @@
                 </div>
             </div>
             <hr class="mt-2 mb-2 bg-dark">
-            <div class="row">
-                <div class="col">Dummy Forecast</div>
-                <div class="col">Dummy Forecast</div>
-                <div class="col">Dummy Forecast</div>
-                <div class="col">Dummy Forecast</div>
-                <div class="col">Dummy Forecast</div>
+            <div id="forecast-div" class="row">
+                <h2 id="forecast-head row">5-day forecast:</h2>
+                <!-- 5 day forecast cards go here -->
             </div>
         </div>
     </div>
